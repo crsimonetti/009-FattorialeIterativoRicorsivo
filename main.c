@@ -20,10 +20,35 @@ int main(int argc, char** argv) {
 }
 
 int fattorialeIterativo(int n) {
-    // TODO Implementa il corpo della funzione
-    return -1;
+int ris;
+ris = 1;
+
+while (n > 0){
+    
+    ris*=n;
+    n--;
+    
+    
+}
+
+    return ris;
 }
 int fattorialeRicorsivo(int n) {
-    // TODO Implementa il corpo della funzione
-    return -1;
+int ris;
+
+ris = 1;
+
+if (n == 0){
+    
+  return ris;  
+    
+}
+   else {
+     
+     ris = n * fattorialeRicorsivo(n-1);
+    
+      
+   }
+   
+    return ris;
 }
